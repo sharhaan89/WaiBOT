@@ -1,1 +1,1 @@
-worker: java src/waibot/WaiBot.java
+Worker: Java src/waibot/WaiBot.java
