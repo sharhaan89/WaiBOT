@@ -10,7 +10,7 @@ import net.dv8tion.jda.api.entities.Activity;
  *
  * @author Shaan
  */
-public class WaiBot {
+public class Main {
 
     public static JDA jda;
     
