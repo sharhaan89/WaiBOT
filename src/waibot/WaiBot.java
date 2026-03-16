@@ -13,10 +13,11 @@ import net.dv8tion.jda.api.entities.Activity;
 public class WaiBot {
 
     public static JDA jda;
+    public static String botToken = "";
     
     public static void main(String args[]) throws LoginException {
         
-        jda = JDABuilder.createDefault("ODk0NjQwMjI2NDk5MTk5MDA2.YVs8ow.AY92QzjTI5c5y_XNtfIZSoQz2F8").build();
+        jda = JDABuilder.createDefault(botToken).build();
         jda.getPresence().setStatus(OnlineStatus.ONLINE);
         jda.getPresence().setActivity(Activity.playing("sim"));
         jda.addEventListener(new Commands());
